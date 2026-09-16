@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+<rect width="1200" height="720" fill="#ffffff"/>
+<text x="60" y="55" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700" fill="#172033">AWS Multi-Account Secure Landing Zone</text>
+<text x="60" y="84" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#526070">Simplified architecture for isolation, centralized logging, governance and infrastructure automation</text>
+<rect x="60" y="115" width="1080" height="130" rx="16" fill="#f3f7ff" stroke="#3978d6" stroke-width="2"/>
+<text x="90" y="150" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#172033">Management Account</text>
+<text x="90" y="178" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#526070">AWS Organizations • account governance • SCPs • centralized control</text>
+<rect x="760" y="140" width="330" height="65" rx="10" fill="#ffffff" stroke="#3978d6"/>
+<text x="785" y="168" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#172033">Terraform + GitHub Actions</text>
+<text x="785" y="190" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#526070">Validate → Plan → Review → Apply</text>
+<path d="M925 205 V285" stroke="#3978d6" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="60" y="285" width="250" height="165" rx="14" fill="#f0fdf4" stroke="#32a852" stroke-width="2"/>
+<text x="85" y="320" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" fill="#172033">Development Account</text>
+<text x="85" y="350" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#526070">Dedicated VPC</text>
+<text x="85" y="376" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#526070">• Public / private subnets</text>
+<text x="85" y="400" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#526070">• Application workloads</text>
+<text x="85" y="424" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#526070">• Environment-specific IAM</text>
+<rect x="340" y="285" width="250" height="165" rx="14" fill="#eff6ff" stroke="#3978d6" stroke-width="2"/>
+<text x="365" y="320" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" fill="#172033">Staging Account</text>
+<text x="365" y="350" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#526070">Dedicated VPC</text>
+<text x="365" y="376" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#526070">• Pre-production testing</text>
+<text x="365" y="400" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#526070">• Validation workloads</text>
+<text x="365" y="424" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#526070">• Restricted access</text>
+<rect x="620" y="285" width="250" height="165" rx="14" fill="#fff7ed" stroke="#e67e22" stroke-width="2"/>
+<text x="645" y="320" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" fill="#172033">Production Account</text>
+<text x="645" y="350" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#526070">Dedicated VPC</text>
+<text x="645" y="376" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#526070">• Production workloads</text>
+<text x="645" y="400" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#526070">• Stricter IAM controls</text>
+<text x="645" y="424" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#526070">• Controlled changes</text>
+<rect x="900" y="285" width="240" height="165" rx="14" fill="#f5f3ff" stroke="#7656d6" stroke-width="2"/>
+<text x="925" y="320" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" fill="#172033">Logging Account</text>
+<text x="925" y="350" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#526070">Centralized audit trail</text>
+<text x="925" y="378" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#526070">• CloudTrail</text>
+<text x="925" y="402" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#526070">• S3 log archive</text>
+<text x="925" y="426" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#526070">• CloudWatch visibility</text>
+<path d="M185 245 V270" stroke="#526070" stroke-width="2" marker-end="url(#arrow)"/><path d="M465 245 V270" stroke="#526070" stroke-width="2" marker-end="url(#arrow)"/><path d="M745 245 V270" stroke="#526070" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M310 385 H900" stroke="#7656d6" stroke-width="2" stroke-dasharray="7 6" fill="none" marker-end="url(#arrow)"/>
+<text x="490" y="375" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#7656d6">Cross-account audit log flow</text>
+<rect x="60" y="500" width="1080" height="160" rx="16" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="90" y="535" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" fill="#172033">Core security and platform principles</text>
+<text x="90" y="570" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#526070">✓ Account isolation &amp; reduced blast radius</text>
+<text x="90" y="600" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#526070">✓ Least-privilege IAM &amp; organization guardrails</text>
+<text x="90" y="630" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#526070">✓ Centralized CloudTrail logging &amp; auditability</text>
+<text x="610" y="570" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#526070">✓ Infrastructure as Code with Terraform</text>
+<text x="610" y="600" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#526070">✓ Reviewable, repeatable infrastructure changes</text>
+<text x="610" y="630" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#526070">✓ Controlled production deployment workflow</text>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#526070"/></marker></defs>
+</svg>
