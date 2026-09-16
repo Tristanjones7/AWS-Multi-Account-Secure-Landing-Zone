@@ -11,20 +11,7 @@
 
 ## Architecture at a glance
 
-```mermaid
-flowchart TB
-    M[Management Account\nAWS Organizations]
-    M --> D[Development Account\nVPC + Workloads]
-    M --> S[Staging Account\nVPC + Test Workloads]
-    M --> P[Production Account\nVPC + Production Workloads]
-    D --> L[Central Logging Account]
-    S --> L
-    P --> L
-    L --> CT[CloudTrail\nAPI Activity]
-    CT --> B[S3\nCentralized Log Storage]
-    G[GitHub Actions] --> T[Terraform\nPlan / Approval / Apply]
-    T --> M
-```
+![AWS Multi-Account Landing Zone](diagrams/architecture.svg)
 
 The design separates development, staging, and production into dedicated AWS accounts under AWS Organizations. A dedicated logging account receives centralized CloudTrail activity, while Terraform and GitHub Actions provide a repeatable infrastructure workflow.
 
@@ -147,6 +134,7 @@ The intended workflow keeps infrastructure changes reviewable and repeatable. Th
 ```text
 AWS-Multi-Account-Secure-Landing-Zone/
 ├── diagrams/
+│   ├── architecture.svg
 │   └── architecture.md
 └── README.md
 ```
